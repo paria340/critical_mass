@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../assets/bg.jpg":[["bg.8616d336.jpg","assets/bg.jpg"],"assets/bg.jpg"],"./../assets/spicy.svg":[["spicy.c01b4fda.svg","assets/spicy.svg"],"assets/spicy.svg"],"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/menu.js":[function(require,module,exports) {
+},{"./../assets/bg-01.jpg":[["bg-01.67d11dbd.jpg","assets/bg-01.jpg"],"assets/bg-01.jpg"],"./../assets/spicy.svg":[["spicy.c01b4fda.svg","assets/spicy.svg"],"assets/spicy.svg"],"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/menu.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -366,13 +366,13 @@ function render(item) {
     if (divID) {
       element.items.forEach(function (food) {
         var li = document.createElement('li');
-        var nestedLi = document.createElement('li');
-        nestedLi.append(food.description); // li.append(nestedLi)
+        var nestedP = document.createElement('p');
+        nestedP.append(food.description); // li.append(nestedLi)
 
         var price = food.price;
         var rounded = parseFloat(price).toFixed(2);
         li.append(food.name, " ", "$", rounded);
-        li.appendChild(nestedLi);
+        li.appendChild(nestedP);
         ul.append(li);
         divID.appendChild(ul);
 

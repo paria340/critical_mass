@@ -26,16 +26,16 @@ function render(item){
     element.items.forEach(food => {
 
         const li = document.createElement('li')
-        const nestedLi = document.createElement('li')
+        const nestedP = document.createElement('p')
 
-        nestedLi.append(food.description)
+        nestedP.append(food.description)
         // li.append(nestedLi)
 
         let price = food.price
         let rounded = parseFloat(price).toFixed(2)
 
         li.append(food.name, " ", "$", rounded)
-        li.appendChild(nestedLi)
+        li.appendChild(nestedP)
         ul.append(li)
         divID.appendChild(ul)
 

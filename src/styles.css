@@ -10,7 +10,10 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 body {
   font-family: sans-serif;
-  background-image: url('../assets/bg.jpg');
+}
+
+header{
+  background-image: url('../assets/bg-01.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -26,6 +29,9 @@ ul{
   padding: 0;
 }
 
+main{
+  width: 50%;
+}
 .menu{
   display: flex;
   justify-content: space-between;
@@ -34,7 +40,7 @@ ul{
 h1{
   text-align: left;
   font-family: 'Italiana', serif;
-  font-size: 3rem; 
+  font-size: 6rem; 
   padding: 10rem 0 1rem 2rem;
   letter-spacing: 1px;
   color: wheat;
@@ -45,15 +51,20 @@ header p{
   color: wheat;
   font-size: 1.2rem; 
   padding: 2rem 0 4rem 2rem;
+  width: 50%;
 }
 
 h2{
+  font-family: 'Italiana', serif;
   text-align: center;
   font-size: 1.6rem;
   text-transform: capitalize;
   letter-spacing: 1px;
   padding-top: 3rem;
+  padding-bottom: 2rem;
+  color: wheat;
 }
+
   
 .spicy:before {
   width: 16px;
@@ -65,12 +76,18 @@ h2{
   padding-right: 3px;
   position: relative;
   top: 2px;
+  margin-right: 2rem;
+  background-color: wheat;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 
 .wrapper{
-  /* width: 50%; */
   margin: 0 auto;
-  background-color: wheat;
+  background-color: #1a1c1b;
+  padding-bottom: 2rem;
+  max-width: 1280px;
 }
 
 ul{
@@ -81,7 +98,65 @@ ul{
 li{
   width: 70%;
   margin: 0 auto;
-  /* text-decoration: none; */
-  /* display: flex;
-  justify-content: space-between; */
+  margin-bottom: 1.2rem;
+  color: wheat;
+  font-family: 'Italianno', cursive;
+  font-size: 1.3rem;
 }
+
+li p {
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-family: 'Italiana', serif;
+}
+
+footer{
+  display: flex;
+  justify-content: flex-end;
+  background-color: #1a1c1b;
+}
+
+footer ul {
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+}
+
+footer ul li{
+  margin-left: 1rem;
+}
+
+@media(max-width: 992px){
+  h1{
+    font-size: 4rem; 
+    color: wheat;
+    text-align: center;
+    width: 100%;
+    padding-top: 3rem;
+
+  }
+
+  main{
+  width: 100%;
+}
+
+  header p{
+    color: wheat;
+    padding: 0.5rem 0 1rem 0 ;
+    text-align: center;
+    width: 100%;
+  }
+  .menu{
+    flex-direction: column;
+  }
+
+  footer{
+    width: 100%;
+  }
+  footer ul {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
